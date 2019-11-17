@@ -35,6 +35,8 @@ def tuition_data(year1, year2, col_dtypes, university):
 
     city_df = city[['TUITIONFEE_OUT']]
 
+    city_df = city_df.dropna(how='all')
+
     return city_df
 
 
